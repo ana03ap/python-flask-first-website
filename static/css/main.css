@@ -1,3 +1,520 @@
-body {
-  background: #000;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: 'Inter',sans-serif;
+  overflow-x: hidden;
+}
+
+/*---- ESTILOS DEL SCROLL ----*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 100px;
+  background: #3366ff;
+  background-clip: padding-box;
+}
+
+/*---- ESTILOS DEL HEADER ----*/
+
+header {
+  height: 72px;
+  box-shadow: 0px 1px 2px rgb(212, 209, 209);
+  background: white;
+  z-index: 1;
+}
+
+header .contenedor-header {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .contenedor-header .logo {
+  height: 40px;
+}
+
+header .contenedor-header .logo img {
+  height: 100%;
+}
+
+header .contenedor-header nav ul {
+  list-style: none;
+}
+
+header .contenedor-header nav ul li {
+  display: inline-block;
+  padding-left: 35px;
+}
+
+header .contenedor-header nav ul li a {
+  text-decoration: none;
+  color: black;
+  transition: ease .2s;
+}
+
+header .contenedor-header nav ul li a:hover {
+  border-bottom: 3px solid black;
+}
+
+header .contenedor-header nav ul li .btn-descargar1 {
+  background-color: #3366ff;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  transition: ease .3s;
+}
+
+header .contenedor-header nav ul li .btn-descargar1:hover {
+  padding: 14px 20px;
+  background-color: #ffe500;
+  color: black;
+}
+
+/*---- ESTILOS DEL INICIO ----*/
+
+.inicio {
+  height: 700px;
+  /*background-color: gray;*/
+}
+
+.inicio .contenedor-inicio {
+  width: 80%;
+  margin: auto;
+  height: 100%;
+}
+
+.inicio .contenedor-inicio .texto-inicio {
+  position: absolute;
+  top: 350px;
+}
+
+.inicio .contenedor-inicio .texto-inicio h1 {
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 98px;
+}
+
+.inicio .contenedor-inicio .texto-inicio p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  margin-top: 10px;
+}
+
+.inicio .contenedor-inicio .texto-inicio a {
+  text-decoration: none;
+}
+
+.inicio .contenedor-inicio .texto-inicio .btn-conoce-mas {
+  background: #3366ff;
+  padding: 15px;
+  color: white;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  transition: ease .3s;
+}
+
+.inicio .contenedor-inicio .texto-inicio .btn-conoce-mas:hover {
+  color: black;
+  background: #ffe500;
+  padding: 18px;
+}
+
+.inicio .circulo1 {
+  font-size: 740px;
+  color: rgba(51, 102, 255, 0.5);
+  position: absolute;
+  left: 700px;
+  top: -100px;
+  z-index: -1;
+}
+
+.inicio .circulo2 {
+  font-size: 72px;
+  color: #ffe500;
+  position: absolute;
+  left: 600px;
+  top: 260px;
+}
+
+.inicio .circulo3 {
+  font-size: 72px;
+  color: #3366ff;
+  position: absolute;
+  left: 800px;
+  top: 610px;
+}
+
+.inicio .img-juego-inicio {
+  width: 450px;
+  border-radius: 6px;
+  position: absolute;
+  left: 970px;
+  top: 200px;
+  transform: rotate(-10deg);
+}
+
+/*---- ESTILOS DE ACERCA DE ----*/
+
+.acerca-de {
+  background: rgba(51, 102, 255, 0.5);
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.acerca-de .contenedor-acerca-de {
+  width: 1000px;
+  margin: auto;
+  color: white;
+}
+
+.acerca-de .contenedor-acerca-de h3 {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 54px;
+  text-align: center;
+}
+
+.acerca-de .contenedor-acerca-de .acerca-de-p1 {
+  font-weight: 400;
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.acerca-de .contenedor-acerca-de h4 {
+  font-weight: 700;
+  margin-top: 40px;
+  font-size: 28px;
+}
+
+.acerca-de .contenedor-acerca-de hr {
+  border: none;
+  height: 2px;
+  background: white;
+  margin-top: 10px;
+}
+
+.acerca-de .contenedor-acerca-de .contenedor-texto {
+  width: 98%;
+  margin: 10px auto 0px auto;
+}
+
+.acerca-de .contenedor-acerca-de .acerca-de-p2 {
+  font-size: 15px;
+  line-height: 26px;
+}
+
+.acerca-de .contenedor-acerca-de .acerca-de-p3 {
+  font-size: 15px;
+  line-height: 26px;
+}
+
+.acerca-de .contenedor-acerca-de .contenedor-texto .subcontenedor-texto {
+  width: 96%;
+  margin: 30px auto 0px auto;
+}
+
+.acerca-de .contenedor-acerca-de .contenedor-texto .subcontenedor-texto ul li {
+  font-size: 15px;
+  line-height: 26px;
+}
+
+.acerca-de .contenedor-acerca-de .galeria {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.acerca-de .contenedor-acerca-de .galeria .img1,
+.acerca-de .contenedor-acerca-de .galeria .img2,
+.acerca-de .contenedor-acerca-de .galeria .img3,
+.acerca-de .contenedor-acerca-de .galeria .img4,
+.acerca-de .contenedor-acerca-de .galeria .img5,
+.acerca-de .contenedor-acerca-de .galeria .img6 {
+  width: 150px;
+  height: 150px;
+  /*background: gray;*/
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.acerca-de .contenedor-acerca-de .galeria .img1 img,
+.acerca-de .contenedor-acerca-de .galeria .img4 img,
+.acerca-de .contenedor-acerca-de .galeria .img6 img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.acerca-de .contenedor-acerca-de .galeria .img2 img,
+.acerca-de .contenedor-acerca-de .galeria .img3 img,
+.acerca-de .contenedor-acerca-de .galeria .img5 img {
+  height: 100%;
+}
+
+.acerca-de .contenedor-acerca-de .contenedor-btn-descarga15 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.acerca-de .contenedor-acerca-de .contenedor-btn-descarga15 a {
+  text-decoration: none;
+}
+
+.acerca-de .contenedor-acerca-de .btn-descargar15 {
+  background-color: #3366ff;
+  color: white;
+  width: 240px;
+  height: 48px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  transition: ease .3s;
+}
+
+.acerca-de .contenedor-acerca-de .btn-descargar15:hover {
+  width: 244px;
+  background-color: #ffe500;
+  color: black;
+}
+
+/*---- ESTILOS DE DESAROLLO ----*/
+
+.desarrollo .contenedor-desarrollo {
+  width: 1000px;
+  margin: auto;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.desarrollo .contenedor-desarrollo h3 {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 54px;
+  text-align: center;
+  color: black;
+}
+
+.desarrollo .contenedor-desarrollo .texto-desarrollo {
+  font-weight: 400;
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.desarrollo .contenedor-desarrollo .factores {
+  width: 540px;
+  margin: 20px auto 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.desarrollo .contenedor-desarrollo .factores .factor1 {
+  width: 270px;
+  text-align: center;
+}
+
+.desarrollo .contenedor-desarrollo .factores .factor1 i {
+  font-size: 100px;
+  color: #ffe500;
+  padding: 20px 0 20px 0;
+}
+
+.desarrollo .contenedor-desarrollo .factores .factor1 .numero {
+  font-size: 72px;
+  font-weight: 800;
+  color: rgba(255, 230, 0, 0.5);
+}
+
+.desarrollo .contenedor-desarrollo .factores .factor1 .titulo {
+  font-weight: 500;
+  color: #ffe500;
+  font-size: 18px;
+}
+
+.desarrollo .contenedor-desarrollo .factores .factor1 .texto-factor {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 20px;
+}
+
+.desarrollo .contenedor-desarrollo .factores .factor2 {
+  width: 270px;
+  text-align: center;
+}
+
+.desarrollo .contenedor-desarrollo .factores .factor2 i {
+  font-size: 100px;
+  color: #3366ff;
+  padding: 20px 0 20px 0;
+}
+
+.desarrollo .contenedor-desarrollo .factores .factor2 .numero {
+  font-size: 72px;
+  font-weight: 800;
+  color: rgba(51, 102, 255, 0.5);
+}
+
+.desarrollo .contenedor-desarrollo .factores .factor2 .titulo {
+  font-weight: 500;
+  color: #3366ff;
+  font-size: 18px;
+}
+
+.desarrollo .contenedor-desarrollo .factores .factor2 .texto-factor {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 20px;
+}
+
+.desarrollo .contenedor-desarrollo .contenedor-btn-descargar2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.desarrollo .contenedor-desarrollo .contenedor-btn-descargar2 a {
+  text-decoration: none;
+}
+
+.desarrollo .contenedor-desarrollo .btn-descargar2 {
+  background-color: #3366ff;
+  color: white;
+  width: 240px;
+  height: 48px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  transition: ease .3s;
+  
+}
+
+.desarrollo .contenedor-desarrollo .btn-descargar2:hover {
+  width: 244px;
+  background-color: #ffe500;
+  color: black;
+}
+
+/*---- ESTILOS DE CONTACTO ----*/
+
+.contacto {
+  background-color: #fff280;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.contacto .contenedor-contacto {
+  width: 1000px;
+  margin: auto;
+}
+
+.contacto .contenedor-contacto h3 {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 54px;
+  text-align: center;
+}
+
+.contacto .contenedor-contacto .tarjeta {
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 40px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contacto .contenedor-contacto .tarjeta .texto-tarjeta {
+  margin-left: 40px;
+}
+
+.contacto .contenedor-contacto .tarjeta .texto-tarjeta h4 {
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.contacto .contenedor-contacto .tarjeta .texto-tarjeta i {
+  font-weight: 600;
+  font-size: 34px;
+  margin-left: 240px;
+  color: black;
+  animation-name: arrow;
+  animation-duration: 600ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.12, 0, 0.39, 0);
+}
+
+.contacto .contenedor-contacto .tarjeta .texto-tarjeta a {
+  text-decoration: none;
+  background-color: gray;
+}
+
+.contacto .contenedor-contacto .tarjeta .texto-tarjeta .btn-correo {
+  padding: 15px;
+  background-color: #3366ff;
+  border-radius: 5px;
+  color: white;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: ease .3s;
+}
+
+.contacto .contenedor-contacto .tarjeta .texto-tarjeta .btn-correo:hover {
+  background-color: #ffe500;
+  color: black;
+  padding: 18px;
+}
+
+.contacto .contenedor-contacto img {
+  width: 450px;
+  height: 450px;
+  border-radius: 1000px;
+  transform: translate(90px, 25px);
+}
+
+@keyframes arrow {
+  0% {transform: translateY(0px)}
+
+  100% {transform: translateY(20px)}
+}
+
+/*---- ESTILOS DEL FOOTER ----*/
+

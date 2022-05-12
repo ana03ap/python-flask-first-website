@@ -3,43 +3,38 @@
 
 {% block content %}
 
-<section class="Acerca de ">
-    <div class="contenedor-descargas">
-        <h1>Acerca de la aplicación </h1>
-        <h4 class="requisitos">Requisitos mínimos del sistema</h4>
-
-        <table>
-            <tr>
-                <td class="ctn-icon"><i class="fas fa-laptop-code"></i></td>
-                <td><p class="titulo">Plataformas compatibles</p><p class="descript">Solamente sistemas operativos Windows 10, macOS 10.13 o Linux.</p></td>
-            </tr>
-            <tr>
-                <td class="ctn-icon"><i class="fas fa-tv"></i></td>
-                <td><p class="titulo">Resolución de la pantalla</p><p class="descript">Es recomendable una resolución de 1920x1080 pixeles.</p></td>
-            </tr>
-            <tr>
-                <td class="ctn-icon"><i class="fas fa-memory"></i></td>
-                <td><p class="titulo">RAM, procesador, gráficos y almacenamiento</p><p class="descript">Como mínimo se necesitan 2GB de RAM, un procesador Intel Pentium G6405 o equivalente en AMD, 512 MB de memoría gráfica y 1 GB de almacenamiento.</p></td>
-            </tr>
-            <tr>
-                <td class="ctn-icon"><i class="fab fa-java"></i></td>
-                <td><p class="titulo">Java</p><p class="descript">Adicionalmente, se requiere Java para abrir el juego.</p><a href="https://www.java.com/es/download/"><div class="btn-java">Descarga Java aquí</div></a></td>
-            </tr>
-        </table>
-
-        <img src="../imagenes/screen.png" alt="">
-
-        <h4 class="opciones">Opciones de descarga</h4>
-
-        <div class="btn-descargas">
-            <a href="https://drive.google.com/file/d/1AKq3CWG72PXjglvX5RkgXhA23vwPtqrJ/view"><div class="btnd btn-jar">
-                <i class="fas fa-download"></i><p>Descargar el juego portable (211 MB)</p>
-            </div></a>
-            <a href="https://drive.google.com/file/d/1LqkQqQaYwvJP_B1ZxJVxWLXi0JIbQTdJ/view"><div class="btnd btn-zip">
-                <i class="fas fa-file-archive"></i><p>Descargar el código fuente del juego (547 MB)</p>
-            </div></a>
+<section class="acerca-de" id="acerca-de">
+    <div class="contenedor-acerca-de">
+        <h3>Acerca de</h3>
+        <p class="acerca-de-p1">Este videojuego fue el producto final de un proyecto de universidad. Este programa fue creado desde cero en Java y con mucha dedicación.</p>
+        <h4>¿Cómo se juega?</h4>
+        <hr>
+        <div class="contenedor-texto">
+            <p class="acerca-de-p2">El usuario tendrá control de un carro que se puede mover hacia el lado izquierdo y derecho, así como también arriba y abajo. De esta forma el jugador puede esquivar a los rivales con el fin de no perder vidas. Si el jugador recoge dos animales de la carretera, obtendrá una vida adicional. La dificultad del juego aumentará gradualmente cada 20 segundos, poniendo a prueba las habilidades del jugador. La partida terminará si el jugador pierde todas las vidas o después de 100 segundos de juego.</p>
         </div>
-
+        <h4>Roles de equipo</h4>
+        <hr>
+        <div class="contenedor-texto">
+            <p class="acerca-de-p3">El desarrollo del juego se dividió en 3 roles:</p>
+            <div class="subcontenedor-texto">
+                <ul>
+                    <li>El backend, encargado de la lógica del código, para el correcto funcionamiento del videojuego, el cual no es visible para el usuario. Se centra en que las acciones que realice el usuario por el teclaso y mouse, sean recibidas por el programa, para ser leídas y arrojar otra acción como respuesta.</li>
+                    <li>El frontend, encargado del diseño y distribución de los elementos visibles para el usuario, como por ejemplo la interfaz y los botones interactivos que la componen, así mismo el diseño de mapas y animales, carros y sonidos. Todo esto para mejorar la experiencia del usuario.</li>
+                    <li>El integrador, encargado de liderar, supervisar, definir los objetivos a realizar y sincronizar el backend del frontend. El integrador es principal apoyo del equipo por ser quien ayuda en ambas áreas (código y diseño), por ello, si hay una dificultad de desarrollo, es quien ofrece una alternativa de implementación.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="galeria">
+            <div class="img1"><img src="imagenes/playa2.jpg" alt=""></div>
+            <div class="img2"><img src="imagenes/Bugatti.png" alt=""></div>
+            <div class="img3"><img src="imagenes/auto.png" alt=""></div>
+            <div class="img4"><img src="imagenes/vega2.png" alt=""></div>
+            <div class="img5"><img src="imagenes/perry.png" alt=""></div>
+            <div class="img6"><img src="imagenes/pradera2.jpg" alt=""></div>
+        </div>
+        <div class="contenedor-btn-descarga15">
+            <a href="https://github.com/"><div class="btn-descargar15">Descarga el juego</div></a>
+        </div>
     </div>
 </section>
 
