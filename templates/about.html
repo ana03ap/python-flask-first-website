@@ -3,6 +3,44 @@
 
 {% block content %}
 
-<h1>About</h1>
+<section class="Acerca de ">
+    <div class="contenedor-descargas">
+        <h1>Acerca de la aplicación </h1>
+        <h4 class="requisitos">Requisitos mínimos del sistema</h4>
+
+        <table>
+            <tr>
+                <td class="ctn-icon"><i class="fas fa-laptop-code"></i></td>
+                <td><p class="titulo">Plataformas compatibles</p><p class="descript">Solamente sistemas operativos Windows 10, macOS 10.13 o Linux.</p></td>
+            </tr>
+            <tr>
+                <td class="ctn-icon"><i class="fas fa-tv"></i></td>
+                <td><p class="titulo">Resolución de la pantalla</p><p class="descript">Es recomendable una resolución de 1920x1080 pixeles.</p></td>
+            </tr>
+            <tr>
+                <td class="ctn-icon"><i class="fas fa-memory"></i></td>
+                <td><p class="titulo">RAM, procesador, gráficos y almacenamiento</p><p class="descript">Como mínimo se necesitan 2GB de RAM, un procesador Intel Pentium G6405 o equivalente en AMD, 512 MB de memoría gráfica y 1 GB de almacenamiento.</p></td>
+            </tr>
+            <tr>
+                <td class="ctn-icon"><i class="fab fa-java"></i></td>
+                <td><p class="titulo">Java</p><p class="descript">Adicionalmente, se requiere Java para abrir el juego.</p><a href="https://www.java.com/es/download/"><div class="btn-java">Descarga Java aquí</div></a></td>
+            </tr>
+        </table>
+
+        <img src="../imagenes/screen.png" alt="">
+
+        <h4 class="opciones">Opciones de descarga</h4>
+
+        <div class="btn-descargas">
+            <a href="https://drive.google.com/file/d/1AKq3CWG72PXjglvX5RkgXhA23vwPtqrJ/view"><div class="btnd btn-jar">
+                <i class="fas fa-download"></i><p>Descargar el juego portable (211 MB)</p>
+            </div></a>
+            <a href="https://drive.google.com/file/d/1LqkQqQaYwvJP_B1ZxJVxWLXi0JIbQTdJ/view"><div class="btnd btn-zip">
+                <i class="fas fa-file-archive"></i><p>Descargar el código fuente del juego (547 MB)</p>
+            </div></a>
+        </div>
+
+    </div>
+</section>
 
 {% endblock%}

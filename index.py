@@ -19,7 +19,10 @@ def home():
 @app.route('/about', strict_slashes=False)
 def about():
     return render_template("about.html")
-
+    
+@app.route('/creditos', strict_slashes=False)
+def creditos():
+    return render_template("creditos.html")
 # Make sure this we are executing this file
 if __name__ == '__main__':
     app.run(debug=True)
