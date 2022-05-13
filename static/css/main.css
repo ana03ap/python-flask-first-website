@@ -1,13 +1,23 @@
 
 
 
-/*---- ESTILOS DEL INICIO ----*/
+/*---- ESTILOS DEL HOME ----*/
 
+.jumbotron {
+  background: rgba(226, 217, 218, 0.384);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.jumbotron .button {
+  background-color: #ff3333;
+  color: white;
+}
 
 /*---- ESTILOS DE ACERCA DE ----*/
 
 .acerca-de {
-  background: rgba(37, 102, 187, 0.384);
+  background: rgba(226, 217, 218, 0.384);
   padding-top: 0px;
   padding-bottom: 100px;
 }
@@ -15,7 +25,7 @@
 .acerca-de .contenedor-acerca-de {
   width: 1000px;
   margin: auto;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .acerca-de .contenedor-acerca-de h3 {
@@ -117,7 +127,7 @@
 }
 
 .acerca-de .contenedor-acerca-de .btn-descargar15 {
-  background-color: #3366ff;
+  background-color: #ff3333;
   color: white;
   width: 240px;
   height: 48px;
@@ -131,215 +141,8 @@
 
 .acerca-de .contenedor-acerca-de .btn-descargar15:hover {
   width: 244px;
-  background-color: #ffe500;
+  background-color: #c09999;
   color: black;
-}
-
-/*---- ESTILOS DE DESAROLLO ----*/
-
-.desarrollo .contenedor-desarrollo {
-  width: 1000px;
-  margin: auto;
-  padding-top: 60px;
-  padding-bottom: 100px;
-}
-
-.desarrollo .contenedor-desarrollo h3 {
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 54px;
-  text-align: center;
-  color: black;
-}
-
-.desarrollo .contenedor-desarrollo .texto-desarrollo {
-  font-weight: 400;
-  margin-top: 20px;
-  font-size: 15px;
-  line-height: 32px;
-  text-align: center;
-}
-
-.desarrollo .contenedor-desarrollo .factores {
-  width: 540px;
-  margin: 20px auto 0 auto;
-  display: flex;
-  flex-direction: row;
-}
-
-.desarrollo .contenedor-desarrollo .factores .factor1 {
-  width: 270px;
-  text-align: center;
-}
-
-.desarrollo .contenedor-desarrollo .factores .factor1 i {
-  font-size: 100px;
-  color: #ffe500;
-  padding: 20px 0 20px 0;
-}
-
-.desarrollo .contenedor-desarrollo .factores .factor1 .numero {
-  font-size: 72px;
-  font-weight: 800;
-  color: rgba(255, 230, 0, 0.5);
-}
-
-.desarrollo .contenedor-desarrollo .factores .factor1 .titulo {
-  font-weight: 500;
-  color: #ffe500;
-  font-size: 18px;
-}
-
-.desarrollo .contenedor-desarrollo .factores .factor1 .texto-factor {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  margin-top: 20px;
-}
-
-.desarrollo .contenedor-desarrollo .factores .factor2 {
-  width: 270px;
-  text-align: center;
-}
-
-.desarrollo .contenedor-desarrollo .factores .factor2 i {
-  font-size: 100px;
-  color: #3366ff;
-  padding: 20px 0 20px 0;
-}
-
-.desarrollo .contenedor-desarrollo .factores .factor2 .numero {
-  font-size: 72px;
-  font-weight: 800;
-  color: rgba(51, 102, 255, 0.5);
-}
-
-.desarrollo .contenedor-desarrollo .factores .factor2 .titulo {
-  font-weight: 500;
-  color: #3366ff;
-  font-size: 18px;
-}
-
-.desarrollo .contenedor-desarrollo .factores .factor2 .texto-factor {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  margin-top: 20px;
-}
-
-.desarrollo .contenedor-desarrollo .contenedor-btn-descargar2 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.desarrollo .contenedor-desarrollo .contenedor-btn-descargar2 a {
-  text-decoration: none;
-}
-
-.desarrollo .contenedor-desarrollo .btn-descargar2 {
-  background-color: #3366ff;
-  color: white;
-  width: 240px;
-  height: 48px;
-  border-radius: 6px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 60px;
-  transition: ease .3s;
-  
-}
-
-.desarrollo .contenedor-desarrollo .btn-descargar2:hover {
-  width: 244px;
-  background-color: #ffe500;
-  color: black;
-}
-
-/*---- ESTILOS DE CONTACTO ----*/
-
-.contacto {
-  background-color: #fff280;
-  padding-top: 60px;
-  padding-bottom: 100px;
-}
-
-.contacto .contenedor-contacto {
-  width: 1000px;
-  margin: auto;
-}
-
-.contacto .contenedor-contacto h3 {
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 54px;
-  text-align: center;
-}
-
-.contacto .contenedor-contacto .tarjeta {
-  width: 100%;
-  height: 300px;
-  background-color: white;
-  border-radius: 20px;
-  margin-top: 40px;
-  overflow: hidden;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.contacto .contenedor-contacto .tarjeta .texto-tarjeta {
-  margin-left: 40px;
-}
-
-.contacto .contenedor-contacto .tarjeta .texto-tarjeta h4 {
-  font-weight: 800;
-  font-size: 30px;
-}
-
-.contacto .contenedor-contacto .tarjeta .texto-tarjeta i {
-  font-weight: 600;
-  font-size: 34px;
-  margin-left: 240px;
-  color: black;
-  animation-name: arrow;
-  animation-duration: 600ms;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: cubic-bezier(0.12, 0, 0.39, 0);
-}
-
-.contacto .contenedor-contacto .tarjeta .texto-tarjeta a {
-  text-decoration: none;
-  background-color: gray;
-}
-
-.contacto .contenedor-contacto .tarjeta .texto-tarjeta .btn-correo {
-  padding: 15px;
-  background-color: #3366ff;
-  border-radius: 5px;
-  color: white;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: ease .3s;
-}
-
-.contacto .contenedor-contacto .tarjeta .texto-tarjeta .btn-correo:hover {
-  background-color: #ffe500;
-  color: black;
-  padding: 18px;
-}
-
-.contacto .contenedor-contacto img {
-  width: 450px;
-  height: 450px;
-  border-radius: 1000px;
-  transform: translate(90px, 25px);
 }
 
 @keyframes arrow {
@@ -349,4 +152,80 @@
 }
 
 /*---- ESTILOS DEL FOOTER ----*/
+
+footer {
+  background-color: #252323;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+footer .contenedor-footer {
+   width: 50%;
+   margin: auto;
+}
+
+
+footer .contenedor-footer .cinta-footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer .contenedor-footer .cinta-footer ul {
+  list-style: none;
+}
+
+footer .contenedor-footer .cinta-footer ul li {
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+footer .contenedor-footer .cinta-footer ul li a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 0px;
+  text-decoration: none;
+  color: white;
+}
+
+footer .contenedor-footer .cinta-footer ul li a:hover {
+  text-decoration: underline;
+}
+
+footer .contenedor-footer hr {
+  border: none;
+  height: 2px;
+  background: white;
+  margin: 10px 0 20px 0;
+}
+
+footer .contenedor-footer .creditos-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .contenedor-footer .creditos-footer p {
+  color: white;
+  font-size: 11px;
+  line-height: 26px;
+}
+
+footer .contenedor-footer .creditos-footer .btns-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .contenedor-footer .creditos-footer .btns-footer i {
+  color: white;
+  font-size: 30px;
+}
+
+footer .contenedor-footer .creditos-footer p {
+  color: white;
+  font-size: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
 

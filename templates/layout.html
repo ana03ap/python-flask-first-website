@@ -8,7 +8,7 @@
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     
-    <link rel="shortcut icon" href="./imagenes/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
   </head>
   <body>
 
@@ -25,9 +25,7 @@
           <li class="nav-item active">
             <a class="nav-link" href="{{ url_for('about') }}">About</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="{{ url_for('creditos') }}">Credits</a>
-          </li>
+         
         </ul>
       </div>
     </nav>
@@ -38,7 +36,27 @@
       {% endblock%}
     </div>
 
-    <!-- SCRIPTS -->
-    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+    
+    <footer>
+      <div class="contenedor-footer">
+          <div class="cinta-footer">
+              <ul>
+                  <li><a href="">Acerca de</a></li>
+                  <li><a href="/">Descargar</a></li>
+                  <li><a href="{{ url_for('creditos') }}">Creditos</a></li>
+              </ul>
+          </div>
+          <hr>
+          <div class="creditos-footer">
+              <p>Proyecto con fines de aprendizaje</p>
+              <div class="btns-footer">
+                  <a href="https://github.com/"><i class="fab fa-github"></i></a>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+
+    
   </body>
 </html>
