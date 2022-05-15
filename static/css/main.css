@@ -102,7 +102,7 @@
   float: right;
    width: 0px;
    height: 10px;
-   margin: -100px 300px; 
+   margin: -15px 625px; 
    padding: 0px;
 }
 
@@ -120,7 +120,7 @@
 }
 
 .acerca-de .contenedor-acerca-de .btn-descargar15 {
-  background-color: #ff3333;
+  background-color: #c92626;
   color: white;
   width: 240px;
   height: 48px;
@@ -154,6 +154,7 @@ footer {
 
 footer .contenedor-footer {
    width: 50%;
+   height: 0%;
    margin: auto;
 }
 
@@ -174,7 +175,7 @@ footer .contenedor-footer .cinta-footer ul li {
 
 footer .contenedor-footer .cinta-footer ul li a {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 0px;
   text-decoration: none;
   color: white;
