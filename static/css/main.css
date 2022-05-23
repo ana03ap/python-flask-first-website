@@ -218,7 +218,7 @@ footer .contenedor-footer .creditos-footer .btns-footer i {
 footer .contenedor-footer .creditos-footer p {
   color: white;
   font-size: 15px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: right;
 }
 
